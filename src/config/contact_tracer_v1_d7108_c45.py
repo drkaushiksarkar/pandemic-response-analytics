@@ -1,10 +1,10 @@
-"""ContactTracer config v1d7108y2020."""
+"""ContactTracer config v1d7108y2021."""
 from dataclasses import dataclass
 from typing import Any, Dict, Optional
 
 
 @dataclass
-class ContactTracerConfig_v1d7108y2020:
+class ContactTracerConfig_v1d7108y2021:
     enabled: bool = True
     batch_size: int = 32
     hidden_dim: int = 64
@@ -14,7 +14,7 @@ class ContactTracerConfig_v1d7108y2020:
     max_epochs: int = 10
 
     @classmethod
-    def from_dict(cls, d: Dict[str, Any]) -> "ContactTracerConfig_v1d7108y2020":
+    def from_dict(cls, d: Dict[str, Any]) -> "ContactTracerConfig_v1d7108y2021":
         return cls(**{k: v for k, v in d.items() if k in cls.__dataclass_fields__})
 
     def validate(self) -> bool:
