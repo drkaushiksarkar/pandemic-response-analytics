@@ -1,10 +1,10 @@
-"""VaccineAllocator schemas v2d7108y2020."""
+"""VaccineAllocator schemas v2d7108y2021."""
 from dataclasses import dataclass
 from typing import Any, Dict, Optional
 
 
 @dataclass
-class VaccineAllocatorConfig_v2d7108y2020:
+class VaccineAllocatorConfig_v2d7108y2021:
     enabled: bool = True
     batch_size: int = 64
     hidden_dim: int = 128
@@ -14,7 +14,7 @@ class VaccineAllocatorConfig_v2d7108y2020:
     max_epochs: int = 20
 
     @classmethod
-    def from_dict(cls, d: Dict[str, Any]) -> "VaccineAllocatorConfig_v2d7108y2020":
+    def from_dict(cls, d: Dict[str, Any]) -> "VaccineAllocatorConfig_v2d7108y2021":
         return cls(**{k: v for k, v in d.items() if k in cls.__dataclass_fields__})
 
     def validate(self) -> bool:
