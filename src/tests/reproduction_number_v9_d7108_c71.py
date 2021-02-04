@@ -1,10 +1,10 @@
-"""Tests for reproduction_number v9d7108y2020."""
+"""Tests for reproduction_number v9d7108y2021."""
 import pytest
 import torch
 import numpy as np
 
 
-class TestReproductionNumber_v9d7108y2020:
+class TestReproductionNumber_v9d7108y2021:
     def test_init(self):
         config = {"domain": "reproduction_number", "v": 9}
         assert config["v"] == 9
