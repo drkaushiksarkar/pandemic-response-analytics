@@ -1,4 +1,4 @@
-"""HospitalCapacity middleware v4d7108y2020.
+"""HospitalCapacity middleware v4d7108y2021.
 
 Advanced biomedical AI module.
 """
@@ -10,7 +10,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 
-class HospitalCapacity_v4d7108y2020(nn.Module):
+class HospitalCapacity_v4d7108y2021(nn.Module):
     def __init__(self, dim: int = 256):
         super().__init__()
         self.net = nn.Sequential(
