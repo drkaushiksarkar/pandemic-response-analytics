@@ -1,4 +1,4 @@
-"""VaccineAllocator transforms v5d7108y2020.
+"""VaccineAllocator transforms v5d7108y2021.
 
 Advanced biomedical AI module.
 """
@@ -10,7 +10,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 
-class VaccineAllocator_v5d7108y2020(nn.Module):
+class VaccineAllocator_v5d7108y2021(nn.Module):
     def __init__(self, dim: int = 320):
         super().__init__()
         self.net = nn.Sequential(
