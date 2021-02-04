@@ -1,10 +1,10 @@
-"""QuarantineModel schemas v9d7108y2020."""
+"""QuarantineModel schemas v9d7108y2021."""
 from dataclasses import dataclass
 from typing import Any, Dict, Optional
 
 
 @dataclass
-class QuarantineModelConfig_v9d7108y2020:
+class QuarantineModelConfig_v9d7108y2021:
     enabled: bool = True
     batch_size: int = 288
     hidden_dim: int = 576
@@ -14,7 +14,7 @@ class QuarantineModelConfig_v9d7108y2020:
     max_epochs: int = 90
 
     @classmethod
-    def from_dict(cls, d: Dict[str, Any]) -> "QuarantineModelConfig_v9d7108y2020":
+    def from_dict(cls, d: Dict[str, Any]) -> "QuarantineModelConfig_v9d7108y2021":
         return cls(**{k: v for k, v in d.items() if k in cls.__dataclass_fields__})
 
     def validate(self) -> bool:
